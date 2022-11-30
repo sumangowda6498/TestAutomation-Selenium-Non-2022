@@ -18,13 +18,15 @@ public class DropdownPage {
     }
 
     public void selectFromDropDown(String option){
-         findDropDownElement().selectByVisibleText(option);
+
+        findDropDownElement().selectByVisibleText(option);
     }
     public List<String> getSelectedOption(){
         List<WebElement> selectedElements= findDropDownElement().getAllSelectedOptions();
         return selectedElements.stream().map(e->e.getText()).collect(Collectors.toList());
     }
     private Select findDropDownElement(){
-      return new Select(driver.findElement(dropdown));
+
+        return new Select(driver.findElement(dropdown));
     }
 }
