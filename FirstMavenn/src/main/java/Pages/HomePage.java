@@ -55,4 +55,16 @@ public KeyPresses clickKeyPress(){
     clickLink("WYSIWYG Editor");
     return new WysiwygEditorPage(driver);
     }
+    public DaynmicLoadPage clickDynamic(){
+    clickLink("Dynamic Loading");
+    return new DaynmicLoadPage(driver);
+    }
+    public LargeandDeepPage clickLargeDeep(){
+    clickLink("Large & Deep DOM");
+    return new LargeandDeepPage(driver);
+    }
+    public InfiniteScroll clickInfinite(){
+        clickLink("Infinite Scroll");
+        return new InfiniteScroll(driver);
+    }
 }
