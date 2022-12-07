@@ -71,4 +71,8 @@ public KeyPresses clickKeyPress(){
         clickLink("Dropdown");
         return new PageDropDown(driver);
     }
+    public MultiplerWindowPage clickMultipleWindow(){
+    clickLink("Multiple Windows");
+    return new MultiplerWindowPage(driver);
+    }
 }

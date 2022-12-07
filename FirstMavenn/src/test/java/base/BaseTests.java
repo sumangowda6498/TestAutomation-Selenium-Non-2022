@@ -1,6 +1,7 @@
 package base;
 
 import Pages.HomePage;
+import Pages.WindowManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -52,4 +53,10 @@ public class BaseTests {
 //        BaseTests test=new BaseTests();
 //        test.setUp();
 //    }
+    @AfterClass
+    public WindowManager getWindow(){
+        return new WindowManager(driver);
+
+
+    }
 }
