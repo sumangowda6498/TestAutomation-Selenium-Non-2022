@@ -67,4 +67,8 @@ public KeyPresses clickKeyPress(){
         clickLink("Infinite Scroll");
         return new InfiniteScroll(driver);
     }
+    public PageDropDown dropDownclick(){
+        clickLink("Dropdown");
+        return new PageDropDown(driver);
+    }
 }
