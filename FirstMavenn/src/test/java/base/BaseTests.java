@@ -7,6 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -32,7 +33,8 @@ public class BaseTests {
         driver.manage().window().maximize();
         //driver.manage().window().fullscreen();
         //driver.manage().window().minimize();
-        //driver.manage().window().setSize(new Dimension(375,412));
+        //driver.manage().window().setSize(new Dimension(375,412));r
+
 
 
         System.out.println(driver.getTitle());
@@ -82,5 +84,11 @@ public class BaseTests {
             }
         }
     }
+
+    private ChromeOptions getChromeOptions(){
+        ChromeOptions options=new ChromeOptions();
+        options.addArguments("disable-infoBars");
+        return options;
     }
+}
 
