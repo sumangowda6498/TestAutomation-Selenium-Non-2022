@@ -3,7 +3,7 @@ import java.io.*;
 
 public class SelectionSort {
 
-        void sort ( int arr[])
+        void selectionSort ( int arr[])
         {
             int n = arr.length;
 
@@ -37,8 +37,8 @@ public class SelectionSort {
         {
             SelectionSort ob = new SelectionSort();
             int arr[] = {64, 25, 12, 22, 11};
-            ob.sort(arr);
-            System.out.println("Sorted array");
+            ob.selectionSort(arr);
+            System.out.println("Sorted array using selection sort is");
             ob.printArray(arr);
         }
     }
