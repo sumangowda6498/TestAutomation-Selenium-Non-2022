@@ -40,6 +40,7 @@ public class SelectionSort {
             ob.selectionSort(arr);
             System.out.println("Sorted array using selection sort is");
             ob.printArray(arr);
+            System.out.println("Suman");
         }
     }
 
